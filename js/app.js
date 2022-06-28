@@ -87,8 +87,8 @@ function createProduct(product) {
                 )
         ),
         produceE("div", {className:"product-description"},
-                produceE("p", {className: {}}, product.description),
-                produceE("p", {className: {}}, product.category))
+                produceE("p", {}, product.description),
+                produceE("p", {}, product.category))
     )
 
     return produceE("div", {className:"product-container d-flex"}, thumbnail, productMeta)
